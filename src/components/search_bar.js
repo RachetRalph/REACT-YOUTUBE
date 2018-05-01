@@ -8,16 +8,12 @@ class SearchBar extends Component{
     }
 
     render() {
-        return (
-        <div className="search-bar">
-            
+        return <div className="search-bar">
+            <h1>FAST TUBE</h1>
             {/* The input sets the change: AKA if there is no input the state does not change */}
-            <input 
-            value={this.state.term}
-            onChange={event => this.onInputChange (event.target.value)} />
-            
-        </div>
-        );
+            <input value={this.state.term} onChange={event => this.onInputChange(event.target.value)} />
+            <h5>The Fastest YouTube Search Engine</h5>
+          </div>;
     }
 
     onInputChange(term){
